@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ТЕСТОВЫЙ САЙТ</title>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="test, site, website"/>
+		<meta name="description" content="Это пробный сайт"/>
+		<meta name="robots" content="all,index,follow" />
+		<meta name="distribution" content="global" />
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link href="main.css" rel="stylesheet" type ="text/css"/>
+	</head>
+	<body>
+		<header>
+			<a href="/" id="logo">
+				<span>T</span>he 
+				<span>T</span>est 
+				<span>S</span>ite
+			</a>
+			<span id="contact">
+				<a href="">Реклама</a>
+				<a href="">Контакты</a>
+			</span>
+		</header>
+		<nav>
+			<a href="/">Главная</a>
+			<a href="">Создание сайтов</a>
+			<a href="">Создание игр</a>
+			<a href="">Магазин</a>
+			<a href="">Разное</a>
+		</nav>
+		<div id="slideMenu">Уроки по программированию!</div>
+		<div id="wrapper">
+			<div id="leftCol">
+				<article>
+					<a href="" title=""><img src="img/art/1.jpg" alt="" title=""/></a>
+					<h2>Здесь Название</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="" title="">Читать далее</a><span>30 ноября 2015 в 1:58</span></p>
+				</article>
+				<article>
+					<a href="" title=""><img src="img/art/2.jpg" alt="" title=""/></a>
+					<h2>Здесь Название</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="" title="">Читать далее</a><span>30 ноября 2015 в 1:58</span></p>
+				</article>
+				<article>
+					<a href="" title=""><img src="img/art/3.jpg" alt="" title=""/></a>
+					<h2>Здесь Название</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="" title="">Читать далее</a><span>30 ноября 2015 в 1:58</span></p>
+				</article>
+				<article>
+					<a href="" title=""><img src="img/art/4.jpg" alt="" title=""/></a>
+					<h2>Здесь Название</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="" title="">Читать далее</a><span>30 ноября 2015 в 1:58</span></p>
+				</article>
+			</div>
+			<div id="rightCol">
+				<div class="banner">
+					<input type="text" placeholder="Поиск" id="search"/>
+				</div>
+				<div class="banner">
+					<span>Стоит посмотреть:</span>
+					<iframe src="https://www.youtube.com/embed/Nii3LIso_Bc" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="rights">
+				Все права защищены &copy; <?php echo date('Y');?>
+			</div>
+			<div id="social">
+				<a href="" title="Группа FaceBook"><img src="img/social/facebook.png" alt="Группа FaceBook" class="ss"/></a>
+				<a href="" title="Группа Вконтакте"><img src="img/social/vk.png" alt="Группа Вконтакте"  class="ss"/></a>
+			</div>
+		</footer>
+	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+			if(screen.width > 800) { // Animate navigation
+				$(document).ready(function() {
+				// функцию скролла привязать к окну браузера
+					$(window).scroll(function(){
+						var distanceTop = $('#slideMenu').offset().top;
+						if ($(window).scrollTop() >= distanceTop)
+							$ ('nav').attr ("id", "fixed");
+						else //if ($(window).scrollTop() < distanceTop)
+							$ ('nav').attr ("id", "nav");
+					});
+				});
+			}
+	</script>
+</html>

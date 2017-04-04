@@ -1,0 +1,7 @@
+[0325/150135.435:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files\temp\reports: Отказано в доступе. (0x5)
+[0325/150135.545:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0325/150135.545:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files\temp\reports: Отказано в доступе. (0x5)
+[0404/230059.007:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files\temp\settings.dat: Отказано в доступе. (0x5)
+[0404/230059.169:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files\temp\settings.dat: Отказано в доступе. (0x5)
+[0404/230059.206:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0404/230103.879:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
